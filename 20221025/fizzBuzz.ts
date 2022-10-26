@@ -17,19 +17,3 @@ function fizzBuzz(n: number): string[] {
     }
     return answ
 };
-
-function sum(num1: number, num2: number): number {
-    return num1 + num2
-};
-
-function runningSum(nums: number[]): number[] {
-    for (let i = 1; i < nums.length; i++) {
-        nums[i] += nums[i -1]
-    }
-
-    return nums;
-};
-
-function maximumWealth(accounts: number[][]): number {
-    return Math.max(...accounts.map((acc) => acc.reduce((prev, curr) => prev + curr), 0))
-};
