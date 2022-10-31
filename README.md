@@ -1,3 +1,3 @@
-# leet-wars-code
+# code-wars
 
-LeetCode and CodeWars tasks and solutions
+CodeWars tasks and solutions in typescript
