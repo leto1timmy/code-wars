@@ -1,3 +1,3 @@
 # code-wars
 
-CodeWars tasks and solutions in typescript
+CodeWars tasks and solutions
