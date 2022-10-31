@@ -28,15 +28,13 @@
 // If you are given an array with multiple answers, return the lowest correct index.
 
 export function findEvenIndex(arr: number[]): number {
-  let answ : number[] = []
+  let answ: number[] = [];
   for (let i = 0; i < arr.length; i++) {
-    let fornow = arr.slice(0, i )
-      .reduce((prev, curr) => prev + curr, 0)
-    let ahead = arr.slice(i + 1)
-      .reduce((prev, curr) => prev + curr, 0)
+    let fornow = arr.slice(0, i).reduce((prev, curr) => prev + curr, 0);
+    let ahead = arr.slice(i + 1).reduce((prev, curr) => prev + curr, 0);
     if (fornow === ahead) {
-      answ.push(i)
+      answ.push(i);
     }
   }
-  return answ.length > 0 ? Math.min( ...answ ) : -1
+  return answ.length > 0 ? Math.min(...answ) : -1;
 }
